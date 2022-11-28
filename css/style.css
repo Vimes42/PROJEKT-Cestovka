@@ -1,0 +1,149 @@
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 40px 20px;
+  font-family: "Montserrat";
+}
+
+header {
+  text-align: center;
+}
+header .logo {
+  margin-bottom: 30px;
+}
+header .menu__list {
+  display: flex;
+  padding: 0;
+  margin-bottom: 50px;
+  justify-content: space-between;
+}
+header .menu__item {
+  list-style: none;
+  margin: 0;
+}
+header .menu__link {
+  text-decoration: none;
+  color: #F03000;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px;
+}
+header .menu__link--active {
+  color: white;
+  background-color: #F03000;
+  background-size: cover;
+  margin: 0;
+}
+
+.box-foto-large {
+  background-color: rgba(128, 128, 128, 0.5019607843);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-areas: "price none" "title" "text";
+}
+.box-foto-large .box-foto-large__colored {
+  grid-area: "price";
+  background-color: #F03000;
+  width: 106px;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  margin: 0;
+}
+.box-foto-large .box-foto-large__title {
+  grid-area: "title";
+  padding-top: 80px;
+  text-align: left;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+}
+.box-foto-large .box-foto-large__text {
+  grid-area: "text";
+  padding: 15px 0 0 0;
+  margin: 0;
+  text-align: left;
+  font-size: 16px;
+}
+
+.box-foto-small {
+  background-color: rgba(128, 128, 128, 0.5019607843);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-areas: "price" "title";
+}
+.box-foto-small .box-foto-small__colored {
+  grid-area: "price";
+  background-color: #F03000;
+  width: 106px;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  margin: 0;
+}
+.box-foto-small .box-foto-small__title {
+  grid-area: "title";
+  padding-top: 46px;
+  text-align: left;
+  font-size: 20px;
+  margin: 0;
+}
+
+.large01 {
+  background-image: url(/images/palmy.png);
+}
+
+.large02 {
+  background-image: url(/images/lodicka.png);
+}
+
+.small01 {
+  background-image: url(/images/jezero2.png);
+}
+
+.small02 {
+  background-image: url(/images/nakole.png);
+}
+
+.small03 {
+  background-image: url(/images/podkova.png);
+}
+
+.small04 {
+  background-image: url(/images/zatoka.png);
+}
+
+.box-icon {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  padding: 20px;
+  background-color: #F0F0F0;
+}
+.box-icon .box-icon__image {
+  grid-column: 1/1;
+  grid-row: 1/2;
+}
+.box-icon .box-icon__title {
+  grid-column: 2/2;
+  grid-row: 1/1;
+  color: #F03000;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.box-icon .box-icon__text {
+  grid-column: 2/2;
+  grid-row: 2/2;
+  font-family: "Open Sans";
+  color: #000000;
+}/*# sourceMappingURL=style.css.map */

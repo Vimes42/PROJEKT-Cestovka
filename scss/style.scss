@@ -1,0 +1,187 @@
+$background-color: #FFFFFF;
+$primary-color: #F03000;
+$secondary-color: #FFFFFF;
+$box-foto-background: #80808080;
+$box-icon-background: #F0F0F0;
+$box-icon-text: #000000;
+$box-news-date: #888888;
+$footer-color: #444444;
+$spacing: 20px;
+$primary-font: 'Montserrat';
+$special-font: 'Open Sans';
+
+
+*, :after, :before { box-sizing: border-box; }
+
+body {
+    margin: 40px 20px;
+    font-family: $primary-font;
+}
+
+header {
+    text-align: center;
+    .logo {
+        margin-bottom: 30px;
+    }
+    .menu__list {
+        display: flex;
+        padding: 0;
+        margin-bottom: 50px;
+        justify-content: space-between;
+    }
+
+    .menu__item {
+        list-style: none;
+        margin: 0;
+    }
+    
+    .menu__link {
+        text-decoration: none;
+        color: $primary-color;
+        font-size: 18px;
+        font-weight: bold;
+        padding: $spacing;
+    }
+        
+    .menu__link--active {
+        color: white;
+        background-color: $primary-color;
+        background-size: cover;
+        margin: 0;
+        
+    }
+    } 
+
+
+  
+.box-foto-large {
+    background-color: $box-foto-background;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    color: $secondary-color;
+    padding: $spacing;
+    margin-bottom: $spacing;
+    display: grid;
+    grid-template-areas: 
+    "price none"
+    "title"
+    "text";
+
+        .box-foto-large__colored {
+            grid-area: "price";
+            background-color: $primary-color;
+            width: 106px;
+            text-align: center;
+            font-size: 18px;
+            padding: 10px;
+            margin: 0;
+            
+        }
+
+        .box-foto-large__title {
+            grid-area: "title";
+            padding-top: 80px;
+            text-align: left;
+            font-size: 28px;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .box-foto-large__text {
+            grid-area: "text";
+            padding: 15px 0 0 0;
+            margin: 0;
+            text-align: left;
+            font-size: 16px;
+        }
+    }
+
+    .box-foto-small {
+        background-color: $box-foto-background;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+        color: $secondary-color;
+        padding: $spacing;
+        margin-bottom: $spacing;
+
+        display: grid;
+        grid-template-areas: 
+        "price"
+        "title";
+    
+            .box-foto-small__colored {
+                grid-area: "price";
+                background-color: $primary-color;
+                width: 106px;
+                text-align: center;
+                font-size: 18px;
+                padding: 10px;
+                margin: 0;  
+            }
+    
+            .box-foto-small__title {
+                grid-area: "title";
+                padding-top: 46px;
+                text-align: left;
+                font-size: 20px;
+                margin: 0;
+            }
+    }
+
+.large01 {
+    background-image: url(/images/palmy.png);
+}
+
+.large02 {
+    background-image: url(/images/lodicka.png);
+}
+
+.small01 {
+    background-image: url(/images/jezero2.png);
+}
+
+.small02 {
+    background-image: url(/images/nakole.png);
+}
+
+.small03 {
+    background-image: url(/images/podkova.png);
+}
+
+.small04 {
+    background-image: url(/images/zatoka.png);
+}
+
+.box-icon {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+
+    padding: $spacing;
+    background-color: $box-icon-background;
+
+    .box-icon__image {
+        grid-column: 1 / 1;
+        grid-row: 1 / 2;
+    }
+
+    .box-icon__title {
+        grid-column: 2 / 2;
+        grid-row: 1 / 1;
+        color: $primary-color;
+        font-size: 18px;
+        margin-bottom: $spacing / 2;
+    }
+
+    .box-icon__text {
+        grid-column: 2 / 2;
+        grid-row: 2 / 2;
+        font-family: $special-font;
+        color: $box-icon-text;
+    }
+    
+}
+
+
