@@ -191,9 +191,34 @@ header {
         margin-top: 40px;
     }
 
-    .icon02 {
-        
+}
+
+.box-news {
+    background-color: $box-icon-background;
+    padding: $spacing;
+    margin-bottom: 20px;
+    font-size: 16px;
+
+    .box-news__date {
+        color: $box-news-date;
+        margin: 0 0 calc($spacing / 2) 0;
+    }
+
+    .box-news__title {
+        color: $primary-color;
+        margin: 0 0 calc($spacing / 2) 0;
+    }
+
+    .box-news__text {
+        font-weight: bold;
+        margin: 0;
     }
 }
 
+.footer {
+    text-align: center;
+    background-color: $footer-color;
+    color: $secondary-color;
+    padding: 20px 0;
+}
 
