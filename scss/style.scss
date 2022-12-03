@@ -20,6 +20,7 @@ body {
 
 header {
     text-align: center;
+
     .logo {
         margin-bottom: 30px;
     }
@@ -71,7 +72,8 @@ header {
         .box-foto-large__colored {
             grid-area: "price";
             background-color: $primary-color;
-            width: 106px;
+            width: fit-content;
+            height: 44px;
             text-align: center;
             font-size: 18px;
             padding: 10px;
@@ -222,3 +224,121 @@ header {
     padding: 20px 0;
 }
 
+@media screen and (min-width: 950px) {
+    body {
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .box-foto-01 {
+        display: grid;
+        grid-template-areas: 
+        "large small01"
+        "large small02";
+
+        .box-foto-large {
+            grid-area: large;
+            column-width: 66%;
+            margin-right: $spacing;
+
+            .box-foto-large__title {
+                padding-top: 225px;
+            }
+        }
+
+        .box-foto-small__title {
+            padding-top: 66px;
+        }
+
+        .small01 {
+            grid-area: small01;
+            margin-bottom: $spacing;
+        }
+
+        .small02 {
+            grid-area: small02;
+        }
+    }
+
+.container-icon {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    .box-icon {
+        width: calc(25%);
+        display: block;
+        text-align: center;
+        margin-bottom: 0;
+        padding: $spacing;
+    }
+
+    .box-icon + .box-icon {
+        margin-left: $spacing;
+    }
+
+    .box-icon__image {
+        margin-bottom: 20px;
+    }
+
+    .box-icon__title {
+        margin-bottom: $spacing;
+        margin-top: 0;
+    }
+
+    .box-icon__text {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.box-foto-02 {
+    display: grid;
+    grid-template-areas: 
+    "small03 large"
+    "small04 large";
+
+    .box-foto-large {
+        grid-area: large;
+        column-width: 66%;
+        margin-left: $spacing;
+
+        .box-foto-large__title {
+            padding-top: 225px;
+        }
+    }
+
+    .box-foto-small__title {
+        padding-top: 66px;
+    }
+
+    .small03 {
+        grid-area: small03;
+        margin-bottom: $spacing;
+    }
+
+    .small04 {
+        grid-area: small04;
+    }
+}
+
+.container-news {
+    display: flex;
+}
+
+.box-news + .box-news {
+    margin-left: $spacing;
+}
+
+
+
+
+    
+
+}

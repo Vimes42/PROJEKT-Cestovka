@@ -50,7 +50,10 @@ header .menu__link--active {
 .box-foto-large .box-foto-large__colored {
   grid-area: "price";
   background-color: #F03000;
-  width: 106px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 44px;
   text-align: center;
   font-size: 18px;
   padding: 10px;
@@ -179,4 +182,94 @@ header .menu__link--active {
   background-color: #444444;
   color: #FFFFFF;
   padding: 20px 0;
+}
+
+@media screen and (min-width: 950px) {
+  body {
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .box-foto-01 {
+    display: grid;
+    grid-template-areas: "large small01" "large small02";
+  }
+  .box-foto-01 .box-foto-large {
+    grid-area: large;
+    -moz-column-width: 66%;
+         column-width: 66%;
+    margin-right: 20px;
+  }
+  .box-foto-01 .box-foto-large .box-foto-large__title {
+    padding-top: 225px;
+  }
+  .box-foto-01 .box-foto-small__title {
+    padding-top: 66px;
+  }
+  .box-foto-01 .small01 {
+    grid-area: small01;
+    margin-bottom: 20px;
+  }
+  .box-foto-01 .small02 {
+    grid-area: small02;
+  }
+  .container-icon {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  .container-icon .box-icon {
+    width: 25%;
+    display: block;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 20px;
+  }
+  .container-icon .box-icon + .box-icon {
+    margin-left: 20px;
+  }
+  .container-icon .box-icon__image {
+    margin-bottom: 20px;
+  }
+  .container-icon .box-icon__title {
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+  .container-icon .box-icon__text {
+    padding: 0;
+    margin: 0;
+  }
+  .box-foto-02 {
+    display: grid;
+    grid-template-areas: "small03 large" "small04 large";
+  }
+  .box-foto-02 .box-foto-large {
+    grid-area: large;
+    -moz-column-width: 66%;
+         column-width: 66%;
+    margin-left: 20px;
+  }
+  .box-foto-02 .box-foto-large .box-foto-large__title {
+    padding-top: 225px;
+  }
+  .box-foto-02 .box-foto-small__title {
+    padding-top: 66px;
+  }
+  .box-foto-02 .small03 {
+    grid-area: small03;
+    margin-bottom: 20px;
+  }
+  .box-foto-02 .small04 {
+    grid-area: small04;
+  }
+  .container-news {
+    display: flex;
+  }
+  .box-news + .box-news {
+    margin-left: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */
